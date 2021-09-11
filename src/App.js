@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Formulario } from './components/Formulario';
+import Formulario from './components/Formulario';
 
 import { Cita } from './components/Cita';
 

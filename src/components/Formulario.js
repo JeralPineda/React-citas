@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import PropTypes from 'prop-types';
 
-export const Formulario = ({ crearCita }) => {
+const Formulario = ({ crearCita }) => {
    // Crear state de citas
    const [cita, actualizarCita] = useState({
       mascota: '',
@@ -128,3 +129,9 @@ export const Formulario = ({ crearCita }) => {
       </>
    );
 };
+
+Formulario.protoTypes = {
+   crearCita: PropTypes.func.isRequired,
+};
+
+export default Formulario;
