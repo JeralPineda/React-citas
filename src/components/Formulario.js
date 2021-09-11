@@ -57,8 +57,6 @@ export const Formulario = ({ crearCita }) => {
          hora: '',
          sintomas: '',
       });
-
-      console.log(cita);
    };
 
    return (
