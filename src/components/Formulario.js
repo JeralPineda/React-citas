@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export const Formulario = () => {
    // Crear state de citas
@@ -31,10 +32,19 @@ export const Formulario = () => {
       if (!mascota.trim() || !propietario.trim() || !fecha.trim() || !hora.trim() || !sintomas.trim()) {
          actualizarError(true);
 
+         //   eliminar error cuando ya esten completos los campos
+         setInterval(() => {
+            actualizarError(false);
+         }, 6000);
+
          return;
       }
 
+      //   eliminar error cuando ya esten completos los campos
+      //   actualizarError(false);
+
       // Asignar un ID
+      cita.id = uuidv4();
 
       // Crear la cita
 
