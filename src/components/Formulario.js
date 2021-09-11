@@ -21,11 +21,26 @@ export const Formulario = () => {
    //    Extrae los valores
    const { mascota, propietario, fecha, hora, sintomas } = cita;
 
+   //    cuando el usuario presiona agregar cita
+   const submitCita = (e) => {
+      e.preventDefault();
+
+      //   validar
+
+      // Asignar un ID
+
+      // Crear la cita
+
+      // Reiniciar el form
+
+      console.log(cita);
+   };
+
    return (
       <>
          <h2>Crear Cita</h2>
 
-         <form>
+         <form onSubmit={submitCita}>
             <label>Nombre Mascota</label>
             <input
                //
