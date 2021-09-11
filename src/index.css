@@ -5,7 +5,7 @@ body {
    margin: 0;
    padding: 0;
    font-family: sans-serif;
-   background-image: linear-gradient(-225deg, #2e2d2e 0%, #0f0f0f 52%, #080808 100%);
+   background-image: linear-gradient(-225deg, #030303 0%, #020202 52%, #000000 100%);
    min-height: 100%;
    padding-bottom: 5rem;
 }
@@ -55,8 +55,8 @@ input[type='time'] {
 
 .cita {
    padding: 2rem;
-   background: rgb(37, 37, 37);
-   border-bottom: 1px solid #383838;
+   background: rgb(26, 25, 25);
+   border-bottom: 1px solid #292929;
    color: #fff;
    transition: all 0.2s ease-in-out;
    margin-bottom: 0.5px;
