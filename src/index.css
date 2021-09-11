@@ -55,9 +55,15 @@ input[type='time'] {
 
 .cita {
    padding: 2rem;
-   background: white;
-   border-bottom: 1px solid #e1e1e1;
-   color: black;
+   background: rgb(37, 37, 37);
+   border-bottom: 1px solid #383838;
+   color: #fff;
+   transition: all 0.2s ease-in-out;
+   margin-bottom: 0.5px;
+}
+
+.cita:hover {
+   transform: scale(1.01);
 }
 
 .cita p {
