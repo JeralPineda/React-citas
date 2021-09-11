@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Cita = ({ cita }) => {
+export const Cita = ({ cita, eliminarCita }) => {
    return (
       <div className='cita'>
          <p>
@@ -18,6 +18,14 @@ export const Cita = ({ cita }) => {
          <p>
             Sintomas: <span>{cita.sintomas}</span>
          </p>
+
+         <button
+            //
+            className='button eliminar u-full-width'
+            onClick={() => eliminarCita(cita.id)}
+         >
+            Eliminar &times;
+         </button>
       </div>
    );
 };

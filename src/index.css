@@ -56,14 +56,11 @@ input[type='time'] {
 .cita {
    padding: 2rem;
    background: rgb(26, 25, 25);
-   border-bottom: 1px solid #292929;
    color: #fff;
    transition: all 0.2s ease-in-out;
    margin-bottom: 0.5px;
-}
-
-.cita:hover {
-   transform: scale(1.01);
+   border-radius: 5px;
+   margin-bottom: 8px;
 }
 
 .cita p {
@@ -73,18 +70,11 @@ input[type='time'] {
 .cita p span {
    font-weight: normal;
 }
-.cita:first-of-type {
-   border-top-left-radius: 1rem;
-   border-top-right-radius: 1rem;
-}
-.cita:last-of-type {
-   border-bottom-left-radius: 1rem;
-   border-bottom-right-radius: 1rem;
-}
+
 .button.eliminar,
 .button.eliminar:hover {
-   background-color: #c10059;
-   color: white;
+   background-color: #20202096;
+   color: #fff;
    margin-top: 2rem;
 }
 
