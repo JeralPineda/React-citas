@@ -10,9 +10,16 @@ export const Formulario = () => {
       sintomas: '',
    });
 
-   const actualizarState = () => {
-      console.log('Escribiendo');
+   //    Funcion que se ejecuta cada que el usuario escribe en un input
+   const actualizarState = (e) => {
+      actualizarCita({
+         ...cita,
+         [e.target.name]: e.target.value,
+      });
    };
+
+   //    Extrae los valores
+   const { mascota, propietario, fecha, hora, sintomas } = cita;
 
    return (
       <>
@@ -26,7 +33,7 @@ export const Formulario = () => {
                name='mascota'
                className='u-full-width'
                placeholder='Nombre Mascota'
-               value={cita.macota}
+               value={mascota}
                onChange={actualizarState}
             />
 
@@ -37,6 +44,7 @@ export const Formulario = () => {
                name='propietario'
                className='u-full-width'
                placeholder='Nombre Dueño de la mascota'
+               value={propietario}
                onChange={actualizarState}
             />
 
@@ -46,6 +54,7 @@ export const Formulario = () => {
                type='date'
                name='fecha'
                className='u-full-width'
+               value={fecha}
                onChange={actualizarState}
             />
 
@@ -55,6 +64,7 @@ export const Formulario = () => {
                type='time'
                name='hora'
                className='u-full-width'
+               value={hora}
                onChange={actualizarState}
             />
 
@@ -63,6 +73,7 @@ export const Formulario = () => {
                //
                name='sintomas'
                className='u-full-width'
+               value={sintomas}
                onChange={actualizarState}
             ></textarea>
 
